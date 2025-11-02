@@ -1,0 +1,48 @@
+---
+thumbnail: "https://picsum.photos/seed/nodejs/1200/800"
+title: "Building a REST API with Node.js and Express"
+description: "A step-by-step tutorial on creating a robust REST API using Node.js and the Express framework. From routing to middleware, we've got you covered."
+date: "2025-10-22"
+author: "Aulil Absor"
+readTime: 18
+categories: ["Node.js", "Backend", "API"]
+---
+
+# Building a REST API with Node.js and Express
+
+Node.js and Express are a powerful combination for building APIs.
+
+## Setting up the Server
+
+Here's a basic Express server setup.
+
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
+```
+
+## HTTP Methods
+
+| Method | Description |
+| --- | --- |
+| `GET` | Retrieve data |
+| `POST` | Create data |
+| `PUT` | Update data |
+| `DELETE` | Delete data |
+
+## API Best Practices
+
+*   Use nouns for resource names (e.g., `/users`).
+*   Use status codes correctly (e.g., `200 OK`, `404 Not Found`).
+*   Version your API (e.g., `/api/v1/users`).
+
+Start building your own powerful APIs today!
